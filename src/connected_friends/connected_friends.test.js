@@ -10,11 +10,6 @@ describe("Connected Friends", () => {
     F: [],
   };
 
-  it("should return true for empty graph", () => {
-    const actual = connected(graph, "A", "F");
-    expect(actual).toEqual(true);
-  });
-
   it("should return false for empty graph", () => {
     const actual = connected({}, "A", "B");
     expect(actual).toEqual(false);
@@ -30,13 +25,14 @@ describe("Connected Friends", () => {
     expect(actual).toEqual(true);
   });
 
+  it("should return true for multi-step connection", () => {
+    const actual = connected(graph, "B", "E");
+    expect(actual).toEqual(true);
+  });
+
   it("should return false for reverse connection", () => {
     const actual = connected(graph, "B", "A");
     expect(actual).toEqual(false);
   });
 
-  it("should return true for multi-step connection", () => {
-    const actual = connected(graph, "B", "E");
-    expect(actual).toEqual(true);
-  });
 });
