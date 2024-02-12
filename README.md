@@ -1,6 +1,6 @@
 # Solving Problems with Stacks and Queues
 
-_Sample problems and solutions for problem solving with stacks and queues_
+_Sample problems and solutions for problem solving with stacks and queues, updated with solutions after completing relavent material._
 
 ## Getting Started
 
@@ -22,9 +22,6 @@ To run the tests
 npm test
 ```
 
-## Solutions
-
-To view the solution to these problems, checkout the **solution** branch.
 
 ## Problems
 
